@@ -1,0 +1,9 @@
+This example shows how to mock a final class (singleton class particularly).
+In this example I have used PowerMock, which supports final class to be mocked and also supports testing static method.
+
+Useful point:
+1. @RunWith(PowerMockRunner.class)
+2. PowerMockito.mockStatic(Afinal.class)
+
+
+Please refer to Application.java file an actual java class in which there is dependency of a singleton class, which will be mocked in test class (ApplicationTest.java)
